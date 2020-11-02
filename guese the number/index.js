@@ -8,9 +8,10 @@ let guesses;
 let correctNumber;
 
 window.onload = function() {
+  console.log(getRandomNumber());
     initGame()
     document.getElementById("number-submit").addEventListener("click", playGame);
-    document.getElementById("restart-game").addEventListener("click", initGame)
+    document.getElementById("restart-game").addEventListener("click", initGame);
 }
 
 function playGame(){
@@ -22,6 +23,7 @@ function playGame(){
 
 // Initialize a new game by resetting all values and content on the page
 function initGame(){
+  document.getElementById("number-guess").value="";
   correctNumber = getRandomNumber();
   guesses = []
   displayHistory()
@@ -91,7 +93,7 @@ function getDialog(dialogType, text){
 }
 
 function showYouWon(){
-  const text = "Awesome job, you got it!"
+  const text = "Awesome, you got it!"
   let dialog = getDialog('won', text)
   document.getElementById("result").innerHTML = dialog;
 }

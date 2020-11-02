@@ -44,9 +44,9 @@ let fruit = "How-are-you-doing-today?";
 let fruits = "How are you doing everyday?";
 
 name = fruit.length
-name = fruit.indexOf('pl');
+name = fruit.indexOf('ou');
 name = fruit.slice(1, 4);
-name = fruit.replace('apple', 'mula');
+name = fruit.replace('are', 'am');
 name = fruit.toUpperCase();
 name = fruit.toLowerCase();
 name = fruit[3];
@@ -117,7 +117,7 @@ console.log(someNumbers.sort(function(a, b) {return b-a})); //sorting in decendi
 
 //////////////////////////// OBJECT ///////////////////////
 
-
+//console.log(JSON.parse(studant)); //String to Json data
 
 
 
